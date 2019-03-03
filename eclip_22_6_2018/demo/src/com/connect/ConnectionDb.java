@@ -1,0 +1,55 @@
+package com.connect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ConnectionDb {
+	
+	public static Connection openConnection() {
+		Connection con = null;
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			con=DriverManager.getConnection("jdbc:sqlserver://localhost:52824;databaseName=demo","sa","123456");
+		}catch (ClassNotFoundException e) {
+			System.out.println("loi forname"+e.getMessage());
+			Logger.getLogger(ConnectionDb.class.getName()).log(Level.SEVERE, null, e);
+			e.printStackTrace();
+		} catch (SQLException e) {
+			System.out.println("loi driver"+e.getMessage());
+			Logger.getLogger(ConnectionDb.class.getName()).log(Level.SEVERE, null, e);
+		}
+		return con;
+	}
+	
+	public static void closeAll(Connection con,PreparedStatement pstmt,ResultSet rs) {
+		if(con!=null) {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				Logger.getLogger(ConnectionDb.class.getName()).log(Level.SEVERE, null, e);
+			}
+		}
+		
+		if(pstmt!=null) {
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				Logger.getLogger(ConnectionDb.class.getName()).log(Level.SEVERE, null, e);
+			}
+		}
+		
+		if(rs!=null) {
+			try {
+				rs.close();
+			} catch (SQLException e) {
+				Logger.getLogger(ConnectionDb.class.getName()).log(Level.SEVERE, null, e);
+			}
+		}
+		
+	}
+}

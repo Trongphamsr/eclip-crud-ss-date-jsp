@@ -1,0 +1,32 @@
+package com.doituong.test;
+
+import java.util.Scanner;
+
+import com.doituong.model.BaiTapQLSVOOP;
+
+public class TestBaiTapQLSVOOP {
+
+	public static void main(String[] args) {
+		BaiTapQLSVOOP nv1,nv2;
+		System.out.println("nhap thong tin nv1");
+		System.out.println("nhap ho");
+		String ho1=new Scanner(System.in).nextLine();
+		System.out.println("nhap ten");
+		String ten1=new Scanner(System.in).nextLine();
+		System.out.println("so san pham");
+		int soSp1 = new Scanner(System.in).nextInt();
+		nv1=new BaiTapQLSVOOP(ho1, ten1, soSp1);
+		
+		
+		System.out.println("nhap thong tin nv2");
+		System.out.println("nhap ho");
+		String ho2=new Scanner(System.in).nextLine();
+		System.out.println("nhap ten");
+		String ten2=new Scanner(System.in).nextLine();
+		System.out.println("so san pham");
+		int soSp2 = new Scanner(System.in).nextInt();
+		nv2=new BaiTapQLSVOOP(ho2, ten2, soSp2);
+		
+		
+	}
+}

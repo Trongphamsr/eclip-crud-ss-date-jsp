@@ -1,0 +1,16 @@
+package com.bai80;
+
+import java.util.ArrayList;
+
+public class BaiTapFileTextFileFactory {
+
+	public static boolean saveFile(ArrayList<BaiTapFile> dsKH, String path)
+	{
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

@@ -1,0 +1,11 @@
+package com.bai80;
+
+import java.util.ArrayList;
+
+public class SerializeTest {
+
+	public static void main(String[] args) {
+		ArrayList<serializeKhachHang> dsKH = new ArrayList<>();
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.doituong.model;
+
+public class KeThua {
+
+//	contructor k ke thua, muon sd dung tu khoa supper 
+	
+}

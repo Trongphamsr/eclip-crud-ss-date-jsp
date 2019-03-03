@@ -1,0 +1,5 @@
+package st;
+
+public abstract class BaiTap3OOPPerson {
+
+}

@@ -1,0 +1,14 @@
+package communityutil.com;
+
+public class KhaiBaoBien {
+
+	/**
+	 * bien la gi la don vi co ban de luu tru trong java
+	 * de su dung ta phai khai bao bieens truoc khi sd
+	 * la thanh phan xac dinh du lieu dung tham chieu den cac gia tri xac dinh duoc tao ra trong chuong trinh java
+	 * khai bao kieu co so va dieu doi tuong(datatype) tenbien=?
+	 * quy tac, ten bien bat dau chu, k bat dau bang so x1 ok 1x no ok
+	 * k trung voi tu khoa java vd int int sai
+	 * phan biet chu hoa va thuong
+	 */
+}

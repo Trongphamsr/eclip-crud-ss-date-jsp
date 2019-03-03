@@ -1,0 +1,23 @@
+package com.connect;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+public class ConnectionDb {
+	
+	public static Connection openConnection() {
+		Connection con = null;
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			con=DriverManager.getConnection("jdbc:sqlserver://localhost:52824;databaseName=demo","sa","123456");
+		}catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) ;
+		//{
+//			System.out.println("loi driver");
+//		}
+	}
+
+}

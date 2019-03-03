@@ -1,0 +1,12 @@
+package com.bai24;
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class ThuVienNgayThang {
+
+	public static void main(String[] args) {
+		int s = 123643347437;
+		
+	}
+}

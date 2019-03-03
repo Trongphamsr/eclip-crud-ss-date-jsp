@@ -1,0 +1,18 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class VongLapWhileInJava {
+/**
+ * 
+ * @param args
+ */
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		while(a>6) {
+			System.out.println("so "+ a +"ban da nhap dung mot gia tri lon 0");
+			a--;
+		}
+	}
+}

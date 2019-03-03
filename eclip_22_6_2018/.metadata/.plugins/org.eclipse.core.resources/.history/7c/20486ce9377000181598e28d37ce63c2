@@ -1,0 +1,58 @@
+<%@page import="java.util.Map"%>
+<%@page import="dao.NgonNguDao"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<% Map<String,String> showLanguage= new NgonNguDao().englishLanguage();
+	String lang =(String) session.getAttribute("lang");
+	if(lang!=null){
+		if(lang.equals("Vietnamese")){
+			showLanguage=new NgonNguDao().vietnameseLanguage();
+		}else if(lang.equals("English")){
+			showLanguage=new NgonNguDao().englishLanguage();
+		}
+	}
+%>    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+ <div class="row" style="float: right;">
+	<div class="dropdown">
+	    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+	    <span class="caret"></span></button>
+	    <ul class="dropdown-menu">
+	      <li><a href="Dangonngu?lang=Vietnamese">VietNam</a></li>
+	      <li><a href="Dangonngu?lang=English">English</a></li>
+	    </ul>
+	  </div>
+	</div> 
+ </div>
+
+ 	
+ 	<form action="/action_page.php">
+ 		<h1><%=showLanguage.get("Login.TieuDe") %></h1>
+	  <div class="form-group">
+	    <label for="email"><h1><%=showLanguage.get("Login.TenDangNhap") %></h1></label>
+	    <input type="email" class="form-control" id="email">
+	  </div>
+	  <div class="form-group">
+	    <label for="pwd"><h1><%=showLanguage.get("Login.MatKhau") %></h1></label>
+	    <input type="password" class="form-control" id="pwd">
+	  </div>
+	  <div class="checkbox">
+	    <label><input type="checkbox"><h1><%=showLanguage.get("Login.GhiNho") %></h1></label>
+	  </div>
+	  <button type="submit" class="btn btn-default"><h1><%=showLanguage.get("Login.Submit") %></h1></button>
+	</form>
+ 	
+ </div>
+
+</body>
+</html>

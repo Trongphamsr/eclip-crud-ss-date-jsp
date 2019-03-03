@@ -1,0 +1,22 @@
+package com.bai48;
+
+import java.util.Random;
+
+public class SapXepMang {
+
+	public static void nhapMang(int M[]) {
+		Random rd = new Random();
+		for (int i = 0; i < M.length; i++) {
+			M[i] = rd.nextInt(100);
+		}
+	}
+	
+	public static void xuatMang(int M[]) {
+		for (int i = 0; i < M.length; i++) {
+			
+		}
+	}
+	public static void main(String[] args) {
+		
+	}
+}

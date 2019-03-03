@@ -1,0 +1,18 @@
+package com.doituong;
+
+public class QuyTacKhaiBaoLtHuongDt {
+// 1 class la danh tu ky tu dau tien viet hoa
+	// tinh dong goi de private chi ban than SinhVien truy xuat dk
+	
+	// thuoc tinh
+	private String hoTen;
+	private double diem;
+	
+	
+	// phuong thuc
+	public void show() {
+		System.out.println(hoTen +" "+diem);
+	}
+	
+	// contructor === ten class mac dinh thi no la ham khoi tao co san ta k can khoi tao, nhung khi ta khoi tao mot ham khoi tao khac thi ham mac dinh mat di
+}

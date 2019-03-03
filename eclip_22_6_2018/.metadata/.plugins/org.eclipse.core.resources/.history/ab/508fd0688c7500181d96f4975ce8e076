@@ -1,0 +1,36 @@
+package com.bai80;
+
+import java.io.Serializable;
+
+public class BaiTapSerialize implements Serializable {
+
+	private String ten,phone;
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public BaiTapSerialize(String ten, String phone) {
+		super();
+		this.ten = ten;
+		this.phone = phone;
+	}
+
+	public BaiTapSerialize() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

@@ -1,0 +1,11 @@
+package com.bai80;
+
+import java.util.ArrayList;
+
+public class BaiTapSerializeFactory {
+
+	public static boolean saveFile(ArrayList<BaiTapSerializeDanhBa>dsDB, String path)
+	{
+		
+	}
+}

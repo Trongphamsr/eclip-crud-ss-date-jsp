@@ -1,0 +1,17 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class NhapBanPhamScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ban nhap du lieu tu ban phim");
+		int a= sc.nextInt();
+		if(a>5) {
+			System.out.println("ban accept");
+		}else {
+			System.out.println("ban false");
+		}
+	}
+}

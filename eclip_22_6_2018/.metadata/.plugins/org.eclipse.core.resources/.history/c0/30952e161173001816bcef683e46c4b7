@@ -1,0 +1,27 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BieuThucSwichCace {
+
+	public static void main(String[] args) {
+		System.out.println("moi ban nhap du lieu tu ban phim");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		switch (a) {
+		case 1:
+			System.out.println(" ban nhap so 1");
+			break;
+		case 2:
+			System.out.println(" ban nhap so 2");
+			break;
+		case 3:
+			System.out.println(" ban nhap so 3");
+			break;	
+
+		default:
+			System.out.println(" ban nhap cac so khac 1 2 3");
+			break;
+		}
+	}
+}

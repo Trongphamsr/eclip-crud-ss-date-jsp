@@ -1,0 +1,17 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class ICauTrufElse {
+	public static void main(String[] args) {
+		System.out.println("moi ban nhap du lieu tu ban phim");
+		Scanner sc = new Scanner(System.in);
+		int a= sc.nextInt();
+		if(a>0) {
+			System.out.println("ban nhap gia tri duong");
+		}else {
+			System.out.println("ban nhap gia tri am");
+		}
+		System.out.println("moi ban nhap chuoi tu ban phim");
+	}
+}

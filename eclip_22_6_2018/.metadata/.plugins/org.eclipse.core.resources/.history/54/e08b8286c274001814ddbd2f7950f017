@@ -1,0 +1,6 @@
+package com.doituong.model;
+
+public class AliasVaGomtudong {
+
+	// co 2 vung nho a va b, 1 vung no ma co 2 doi tuong goi la alias con neu vung nho bi rong thi no bi thu hoi goi la co che gom tu dong
+}

@@ -1,0 +1,20 @@
+package com.doituong.test;
+
+import com.doituong.model.Staticlass;
+
+public class TestStaticlass {
+
+	public static void main(String[] args) {
+		Staticlass a = new Staticlass();
+		a.setA(113);
+		System.out.println(a.getA());
+		Staticlass b = new Staticlass();
+		System.out.println(b.getA());
+		
+		Staticlass c= new Staticlass();
+		c.setA(114);
+		System.out.println(a.getA());
+		System.out.println(c.getA());
+		System.out.println(b.getA());
+	}
+}

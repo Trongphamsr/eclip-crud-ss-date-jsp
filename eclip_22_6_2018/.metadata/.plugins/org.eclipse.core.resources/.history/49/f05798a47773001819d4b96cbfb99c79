@@ -1,0 +1,9 @@
+package com.bai24;
+
+public class NoiVaChenChuoi {
+	public static void main(String[] args) {
+		String s="obama";
+		s=s+" putin";
+		System.out.println(s);
+	}
+}

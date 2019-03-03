@@ -1,0 +1,7 @@
+package communityutil.com;
+
+public class GiaiPhuongTrinhBacMot {
+	public static void main(String[] args) {
+		System.out.println("xin chào các bạn");
+	}
+}

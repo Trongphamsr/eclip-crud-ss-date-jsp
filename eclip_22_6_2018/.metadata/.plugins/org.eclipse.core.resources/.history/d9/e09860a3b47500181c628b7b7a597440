@@ -1,0 +1,18 @@
+package com.stringJavacore;
+
+public class CompareTo {
+
+	public static void main(String[] args) {
+		// compareToIgnoreCase ss nhung khong phan biet chu hoa va hu thong
+		// compareTo ss chuoi neu chuoi mang di ss voi chuoi dk ss neu lon hon thi tra ve so lon hon 0, nho hon thi tra ve so am, = nhau thi tra ve so 0
+		String s1="xin chao cac ban";
+		String s2 = "hello";
+		String s3="hello";
+		String s4="xin chao";
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s3.compareTo(s1));
+		System.out.println(s1.compareTo(s4));
+		System.out.println(s3.compareTo(s2));
+		System.out.println(s3.compareToIgnoreCase(s2));
+	}
+}

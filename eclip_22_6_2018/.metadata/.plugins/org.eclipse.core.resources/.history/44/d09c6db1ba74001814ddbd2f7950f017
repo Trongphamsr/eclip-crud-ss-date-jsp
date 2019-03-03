@@ -1,0 +1,41 @@
+package com.doituong.model;
+
+public class OverloadingMethod {
+
+	// contructor la truong hop dac biet cua OverloadingMethod
+	// OverloadingMethod cung ten khac so luong, kieu, thu tu cac doi so
+	
+	private int ma;
+	private String ten;
+	private double diem;
+	public OverloadingMethod() {
+		
+	}
+	
+	public OverloadingMethod(int ma) {
+		// ke thua lai tu thang mac dinh
+		this();
+		this.ma=ma;
+	}
+	
+	public OverloadingMethod(int ma,String ten) {
+		// ke thua lai tu thang mac dinh
+		this(ma);
+		this.ten=ten;
+	}
+	
+	public OverloadingMethod(int ma,String ten,double diem) {
+		// ke thua lai tu thang mac dinh
+		this(ma,ten);
+		this.diem=diem;
+	}
+	
+	public void xetTotNghiep() {
+		if(this.diem>=5) {
+			System.out.println("duo xet tot nghiep");
+		}else {
+			System.out.println("khong duoc xet tot nghiep");
+		}
+	}
+
+}

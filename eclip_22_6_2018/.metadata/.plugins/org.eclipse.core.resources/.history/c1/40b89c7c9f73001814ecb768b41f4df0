@@ -1,0 +1,15 @@
+package com.bai24;
+
+public class ToiUuChuoi {
+
+	public static String toiUU(String s) {
+		String sToiUu=s;
+		sToiUu=sToiUu.trim();
+		return sToiUu;
+	}
+	public static void main(String[] args) {
+		String s="  Tran   Duy thaNH  ";
+		String sToiUuu=toiUU(s);
+		System.out.println(sToiUuu);
+	}
+}

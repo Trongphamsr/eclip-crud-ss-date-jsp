@@ -1,0 +1,18 @@
+package com.stringJavacore;
+
+public class split {
+
+	public static void main(String[] args) {
+		
+		String s1="java string split method by javatpoint";  
+		String[] words=s1.split("\\s");//splits the string based on whitespace  
+		//using java foreach loop to print elements of string array  
+		for(String w:words){  
+		System.out.print(w);  
+		}  
+		String[] word=s1.split("s");
+		for(String w1:word){  
+			System.out.print(w1);  
+			} 
+	}
+}

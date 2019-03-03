@@ -1,0 +1,13 @@
+package javacore;
+
+public class XuatDuLieuManHinh7 {
+
+	public static void main(String[] args) {
+//		 xuat thu vien thuoc java.lang
+//		 xuat tren 1 dong va khac dong
+//		cac ky tu dac biet
+//		\n xuong dong \t thut dau dong \\ trich dan
+		System.out.println("xin chao cac ban");
+		System.out.println("xin chao viet nam");
+	}
+}

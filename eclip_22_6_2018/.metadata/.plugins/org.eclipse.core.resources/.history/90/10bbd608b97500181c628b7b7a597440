@@ -1,0 +1,24 @@
+package com.stringJavacore;
+
+public class getChars {
+
+	public static void main(String[] args) {
+		
+		String s1 = new String(" xin chao toi ten la pham van trong");
+		char[] ch=new char[10];
+		try {
+			 s1.getChars(6, 16, ch, 0);  
+	         System.out.println(ch); 
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+//		String str = new String("hello javatpoint how r u");  
+//	      
+//		char[] ch = new char[10];  
+//	      try{  
+//	         str.getChars(6, 16, ch, 0);  
+//	         System.out.println(ch);  
+//	      }catch(Exception ex){System.out.println(ex);}  
+	      
+	}
+}

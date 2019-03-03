@@ -1,0 +1,13 @@
+package com.doituong.test;
+
+public class TestBaiTapQLSV2OOP {
+
+	protected String name,address,phone;
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+	
+	public abstract double pay();
+}

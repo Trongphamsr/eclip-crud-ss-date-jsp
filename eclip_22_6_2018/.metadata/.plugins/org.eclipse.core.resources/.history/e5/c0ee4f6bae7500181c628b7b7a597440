@@ -1,0 +1,99 @@
+package com.project;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class TestContact {
+
+	static HashMap<Integer, Contact>csdl= new HashMap<>();
+	public static void menu() {
+		System.out.println("1.them");
+		System.out.println("2.xuat");
+		System.out.println("3.sua");
+		System.out.println("4.xoa");
+		System.out.println("5.timkiem");
+		System.out.println("6.sapxep");
+		System.out.println("7.luufile");
+		System.out.println("8.docfile");
+		System.out.println("9.thoat");
+		System.out.println("ban muon j");
+		int n = new Scanner(System.in).nextInt();
+		switch (n) {
+		case 1:
+			them();
+			break;
+		case 2:
+			xuat();
+			break;
+		case 3:
+			sua();
+			break;
+		case 4:
+			xoa();
+			break;
+		case 5:
+			tim();
+			break;
+		case 6:
+			sapxep();
+			break;
+		case 7:
+			luufile();
+			break;
+		case 8:
+			docfile();
+			break;
+		case 9:
+			System.err.println("cam on ban da su dung phan mem cua chung toi");
+			System.exit(0);
+			break;
+		default:
+			break;
+		}
+	}
+	private static void docfile() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void luufile() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void sapxep() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void tim() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void xoa() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void sua() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void xuat() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void them() {
+		System.out.println("nhap ma");
+		int ma=new Scanner(System.in).nextInt();
+		System.out.println("nhap ten");
+		String ten = new Scanner(System.in).nextLine();
+		System.out.println("nhap sdt");
+		String phone = new Scanner(System.in).nextLine();
+		
+		Contact c = new Contact(ma,ten,phone);
+		if(csdl.con)
+	}
+	public static void main(String[] args) {
+		while (true) {
+			menu();
+			
+		}
+	}
+}

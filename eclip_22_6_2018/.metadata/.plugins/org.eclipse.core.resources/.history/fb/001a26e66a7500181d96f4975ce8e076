@@ -1,0 +1,9 @@
+package com.doituong.test;
+
+import java.util.ArrayList;
+
+
+public abstract class TestBaiTapQLSV2OOP {
+
+	
+}

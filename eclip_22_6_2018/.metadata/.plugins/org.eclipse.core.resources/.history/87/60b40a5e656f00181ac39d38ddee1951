@@ -1,0 +1,45 @@
+package com.model;
+
+import java.sql.Timestamp;
+
+public class InsertModel {
+
+	private int id;
+	private String username, password,createdate;
+	public InsertModel(int id, String username, String password, String createdate) {
+		super();
+		this.id = id;
+		this.username = username;
+		this.password = password;
+		this.createdate = createdate;
+	}
+	public InsertModel() {
+		super();
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getCreatedate() {
+		return createdate;
+	}
+	public void setCreatedate(String createdate) {
+		this.createdate = createdate;
+	}
+	
+	
+}

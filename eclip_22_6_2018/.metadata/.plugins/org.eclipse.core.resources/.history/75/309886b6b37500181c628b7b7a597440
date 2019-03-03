@@ -1,0 +1,11 @@
+package com.stringJavacore;
+
+public class charAt {
+
+	public static void main(String[] args) {
+		// neu ban muon tim den 1 vi tri trong chuoi dung charAt
+		String name = "pham van trong";
+		char ch = name.charAt(7);
+		System.out.println(ch);
+	}
+}

@@ -1,0 +1,15 @@
+package st;
+
+import com.doituong.model.BaiTapOOP3Mammal;
+
+public abstract class BaiTap3OOPPerson implements BaiTapOOP3Mammal {
+
+	public void setDateOfBirth() {
+		
+	}
+	
+	public int getAgesAsDates() {
+		return 0;
+		
+	}
+}

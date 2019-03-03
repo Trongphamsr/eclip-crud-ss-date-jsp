@@ -1,0 +1,21 @@
+package communityutil.com;
+
+public class EpKieuJava {
+	/**
+	 *  tai sao phai ep kieu, gia su nhu ta chia mpt phep chia co du ma dung kieu nguyen luc ket qua ta khong nhan duoc phan du, vay de lay dk ta ep ve kieu float 
+	 *
+	 *ep kieu rong, cho nho -> lon luc nay k so mat du lieu
+	 *ep kieu hep
+	 */
+
+	public static void main(String[] args) {
+		Integer a=7;
+		Integer b =5;
+		Integer c = a/b;
+		String s = String.valueOf(c);
+		Float f = Float.parseFloat(s);
+		System.out.println(c);
+		System.out.println(f);
+		
+	}
+}

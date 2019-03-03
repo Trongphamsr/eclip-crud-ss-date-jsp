@@ -1,0 +1,27 @@
+package com.bai24;
+
+public class BaiTapTachChuoi {
+
+	public static String baiHatap3(String baiHat) {
+		int vtCuoi =baiHat.lastIndexOf("/");
+		String ten =baiHat.substring(vtCuoi+1);
+		return ten;
+	}
+	
+	public static String baiHatapk3(String baiHat) {
+		int vtCuoi1 =baiHat.lastIndexOf("/");
+		int vtCuoi2=baiHat.lastIndexOf(".");
+		String ten =baiHat.substring(vtCuoi1,vtCuoi2);
+		return ten;
+	}
+	
+	
+	public static void main(String[] args) {
+		String baiHat = "D:/music/bolero/longme.mp3";
+		String kq=baiHatap3(baiHat);
+		System.out.println(kq);
+		
+		String kq1=baiHatap3(baiHat);
+		System.out.println(kq1);
+	}
+}

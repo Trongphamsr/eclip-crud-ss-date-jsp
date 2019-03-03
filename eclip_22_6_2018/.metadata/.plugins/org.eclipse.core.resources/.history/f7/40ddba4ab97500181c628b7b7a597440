@@ -1,0 +1,8 @@
+package com.stringJavacore;
+
+public class indexOf {
+
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,14 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BreakContinute {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("nhap tu ban phim");
+		int a = sc.nextInt();
+		while () {		
+		}
+	}
+}

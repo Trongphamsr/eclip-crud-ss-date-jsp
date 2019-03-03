@@ -1,0 +1,10 @@
+package com.bai24;
+
+public class ThuVienToanHoc {
+
+	public static void main(String[] args) {
+		System.out.println("PI= "+Math.PI);
+		int sonn =Math.min(9, 15);
+		System.out.println("so min= "+sonn);
+	}
+}

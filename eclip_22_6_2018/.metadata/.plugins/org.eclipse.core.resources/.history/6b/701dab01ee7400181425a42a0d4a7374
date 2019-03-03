@@ -1,0 +1,7 @@
+package com.doituong.model;
+
+public class Overriding {
+	
+	// overloadding cung ten khac kieu, nam trong 1 class
+	// nguoc lai la overriding
+}

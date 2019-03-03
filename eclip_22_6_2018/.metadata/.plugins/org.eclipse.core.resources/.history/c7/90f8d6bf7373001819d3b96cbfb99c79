@@ -1,0 +1,17 @@
+package com.bai24;
+
+public class TryCatch {
+
+	public static void main(String[] args) {
+		try {
+			int x=5;
+			int y=5/10;
+			int z=x/y;
+			System.out.println(x);
+			System.out.println(y);
+			System.out.println(z);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

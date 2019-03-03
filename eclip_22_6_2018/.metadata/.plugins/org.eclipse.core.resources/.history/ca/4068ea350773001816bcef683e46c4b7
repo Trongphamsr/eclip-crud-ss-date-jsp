@@ -1,0 +1,18 @@
+package communityutil.com;
+
+public class PhepToanTrongJava {
+
+	/**
+	 * toan tu dieu kien toan tu 3 ngoi ?:
+	 */
+	public static void main(String[] args) {
+		double dtb =7;
+		System.out.println(dtb>=5?"ban dung":"ban sai");
+		int x=4;
+		int y=3;
+		int a=x++;
+		int c=++x;
+		System.out.println(c);
+		System.out.println(a);
+	}
+}

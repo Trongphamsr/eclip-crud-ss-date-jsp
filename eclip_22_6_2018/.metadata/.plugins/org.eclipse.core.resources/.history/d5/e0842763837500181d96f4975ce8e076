@@ -1,0 +1,20 @@
+package com.bai80;
+
+import java.io.FileOutputStream;
+import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+
+public class BaiTapFileTextFileFactory {
+
+	public static boolean saveFile(ArrayList<BaiTapFile> dsKH, String path)
+	{
+		try {
+			
+			FileOutputStream fos= new FileOutputStream(path);
+			OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

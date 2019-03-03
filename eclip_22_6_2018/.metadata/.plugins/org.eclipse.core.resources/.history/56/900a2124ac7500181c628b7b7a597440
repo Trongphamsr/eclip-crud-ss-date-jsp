@@ -1,0 +1,15 @@
+package com.project;
+
+import java.util.HashMap;
+
+public class SerializeFileFactory {
+
+	public static boolean saveFile(HashMap<Integer, Contact> csdl, String path) {
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+}

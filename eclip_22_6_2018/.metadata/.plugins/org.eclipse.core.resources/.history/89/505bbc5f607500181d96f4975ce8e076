@@ -1,0 +1,17 @@
+package com.doituong.test;
+
+import java.util.Scanner;
+
+import com.doituong.model.BaiTapQLSVOOP;
+
+public class TestBaiTapQLSVOOP {
+
+	public static void main(String[] args) {
+		BaiTapQLSVOOP nv1,nv2;
+		System.out.println("nhap thong tin nv1");
+		System.out.println("nhap ho");
+		String ho1=new Scanner(System.in).nextLine();
+		System.out.println("nhap ten");
+		String ten1=new Scanner(System.in).nextLine();
+	}
+}

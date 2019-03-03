@@ -1,0 +1,53 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.eclipse.jdt.internal.compiler.batch.Main;
+
+import com.connect.ConnectDb;
+import com.model.LoginModel;
+
+public class LoginDao {
+
+	public static LoginModel Login(String username, String password) {
+		boolean bl = false;
+		Connection con;
+		PreparedStatement ps;
+		ResultSet rs;
+		con=ConnectDb.openConnect();
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		String sql1 = "select createdate from login";
+		long l = Long.parseLong(sql1);
+		
+//		if((timestamp-l)==0) {
+//			
+//		}
+		String sql="select * from login where username='"+username+"' and password='"+password+"'";
+		try {
+			ps=con.prepareCall(sql);
+			rs=ps.executeQuery();
+			
+			while(rs.next()) {
+				LoginModel md= new LoginModel();
+				md.setUsername(rs.getString("username"));
+				md.setPassword(rs.getString("password"));
+				con.close();
+				return md;
+			}
+		} catch (SQLException e) {
+			Logger.getLogger(LoginDao.class.getName()).log(Level.SEVERE,null,e);
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) throws SQLException {
+		
+		
+	}
+}

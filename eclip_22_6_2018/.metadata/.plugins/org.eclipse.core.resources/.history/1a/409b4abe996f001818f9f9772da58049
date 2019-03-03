@@ -1,0 +1,68 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.eclipse.jdt.internal.compiler.batch.Main;
+
+import com.connect.ConnectDb;
+import com.model.LoginModel;
+
+public class LoginDao {
+
+	public static LoginModel Login(String username, String password) {
+		boolean bl = false;
+		Connection con;
+		PreparedStatement ps;
+		ResultSet rs;
+		con=ConnectDb.openConnect();
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		String sql1 = "select createdate from login";
+		
+		long l = Long.parseLong(sql1);
+		
+		String sql="select * from login where username='"+username+"' and password='"+password+"'";
+		try {
+			ps=con.prepareCall(sql);
+			rs=ps.executeQuery();
+			
+			while(rs.next()) {
+				LoginModel md= new LoginModel();
+				md.setUsername(rs.getString("username"));
+				md.setPassword(rs.getString("password"));
+				con.close();
+				return md;
+			}
+		} catch (SQLException e) {
+			Logger.getLogger(LoginDao.class.getName()).log(Level.SEVERE,null,e);
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) throws SQLException {
+		String dateStart = "11/03/14 09:29:58";
+		String dateStop = "11/03/14 09:33:43";
+		SimpleDateFormat format = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
+		Date d1 = null;
+		Date d2 = null;
+		
+		try {
+			d1= format.parse(dateStart);
+			d2=  format.parse(dateStop);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		long dif=d2.getTime()-d1.getTime();
+		System.out.println(dif);
+
+		
+	}
+}

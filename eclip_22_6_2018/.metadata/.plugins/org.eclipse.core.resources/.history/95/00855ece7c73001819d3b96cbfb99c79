@@ -1,0 +1,21 @@
+package com.bai24;
+
+import java.util.Scanner;
+
+public class DinhDangSo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("nhap diem toan");
+		double a = sc.nextDouble();
+		
+		System.out.println("nhap diem ly");
+		double b = sc.nextDouble();
+		
+		System.out.println("nhap diem hoa");
+		double c = sc.nextDouble();
+		
+		double d =(a+b+c)/3;
+		System.out.println(d);
+	}
+}

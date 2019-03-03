@@ -1,0 +1,45 @@
+package com.bai48;
+
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.Set;
+
+public class HasMap {
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<>();
+		map.put(1, "an");
+		map.put(2, "binh");
+		map.put(3, "hanh");
+		map.put(4, "phuc");
+		map.put(5, "giai");
+		map.put(6, "thoat");
+		// lay toan bo ten
+		Collection<String> dsTen= map.values();
+		for (String ten:dsTen) {
+			System.out.println(ten);
+		}
+		
+		System.out.println("danh sach ma");
+		Set<Integer> dsMa=map.keySet();
+		for(int ma : dsMa) {
+			System.out.println(ma);
+		}
+		
+		String ten = map.get(4);
+		System.out.println(ten);
+		if(map.containsKey(5)==false)
+			map.put(5, "happy");
+		System.out.println("---------");
+		dsTen=map.values();
+		for (String ten1:dsTen) {
+			System.out.println(ten1);
+		}
+		System.out.println("---------");
+		map.remove(2);
+		for (String ten1:dsTen) {
+			System.out.println(ten1);
+		}
+		map.clear();
+		System.out.println("phan tu con "+map.size());
+	}
+}

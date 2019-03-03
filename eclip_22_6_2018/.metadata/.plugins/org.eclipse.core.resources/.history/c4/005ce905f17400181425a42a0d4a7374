@@ -1,0 +1,17 @@
+package com.doituong.model;
+
+public class DahinhHinhcn extends DaHinh{
+
+	@Override
+	public double tinhChuVi() {
+		
+		return 0;
+	}
+
+	@Override
+	public double tinhDienTich() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

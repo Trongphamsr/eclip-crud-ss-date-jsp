@@ -1,0 +1,11 @@
+package com.doituong;
+
+public class QuyTacKhaiBaoLtHuongDt {
+// 1 class 
+	private String hoTen;
+	private double diem;
+	
+	public void show() {
+		System.out.println(hoTen +" "+ten);
+	}
+}

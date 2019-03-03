@@ -1,0 +1,16 @@
+package com.bai80;
+
+public class BaiTapFileTest {
+
+	public static void menu() {
+		System.out.println("1.nhap");
+		System.out.println("2.xuat");
+		System.out.println("3.luu");
+		System.out.println("4.mo");
+		System.out.println("5.thoat");
+		System.out.println("ban muon j");
+	}
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,13 @@
+package com.bai24;
+
+public class ChuoiJava {
+
+	public static void main(String[] args) {
+		String s1= new String();
+		String s2 = new String("Obama");
+		String s3="Obama";
+		System.out.println("chieu dai s1 "+s1.length());
+		System.out.println("chieu dai s1 "+s2.length());
+		System.out.println("chieu dai s1 "+s3.length());
+	}
+}

@@ -1,0 +1,24 @@
+package com.bai24;
+
+public class XoaKhoangTrangDuThuThuatraiphaiTrim {
+
+	public static void main(String[] args) {
+		String s= " thay pham van trong ";
+		System.out.println(s);
+		System.out.println("chieu dai= "+s.length());
+		s=s.trim();
+		System.out.println(s);
+		System.out.println("chieu dai= "+s.length());
+		
+		
+		String s1=" Obama an com trua voi putin ";
+		int vtLeft=0;
+		for(int i=0;i<s1.length();i++) {
+			char c=s1.charAt(i);
+			if(c==' ') {
+				vtLeft=i;
+			}
+		}
+		
+	}
+}

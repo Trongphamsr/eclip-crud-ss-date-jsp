@@ -1,0 +1,15 @@
+package com.doituong.test;
+
+import com.doituong.model.BaiTapQLSV2OOPEmployee;
+import com.doituong.model.BaiTapQLSV2OOPStaff;
+
+public abstract class TestBaiTapQLSV2OOP {
+
+	public static void main(String[] args) {
+		BaiTapQLSV2OOPStaff st = new BaiTapQLSV2OOPStaff();
+		BaiTapQLSV2OOPEmployee teo=new BaiTapQLSV2OOPEmployee();
+		teo.setName("a");
+		teo.setAddress("hn");
+		teo.setPhone("01023");
+	}
+}

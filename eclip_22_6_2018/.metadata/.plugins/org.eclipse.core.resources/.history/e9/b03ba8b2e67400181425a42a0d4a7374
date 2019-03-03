@@ -1,0 +1,11 @@
+package com.doituong.model;
+
+public class AbstractThoiVu extends AbstractClass{
+
+	@Override
+	public void tinhLuong() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

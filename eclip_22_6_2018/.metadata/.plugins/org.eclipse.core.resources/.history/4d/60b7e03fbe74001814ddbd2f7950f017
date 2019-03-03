@@ -1,0 +1,89 @@
+package com.doituong.model;
+
+public class OverloadingMethod {
+
+	// contructor la truong hop dac biet cua OverloadingMethod
+	// OverloadingMethod cung ten khac so luong, kieu, thu tu cac doi so
+	
+	private int ma;
+	private String ten;
+	private double diem;
+	private double gia;
+	public OverloadingMethod() {
+			
+		}
+	
+	public OverloadingMethod(int ma,String ten,double gia) {
+		this.ma=ma;
+		this.ten=ten;
+		this.gia=gia;
+	}
+	
+	public OverloadingMethod(int ma) {
+		// ke thua lai tu thang mac dinh
+		this();
+		this.ma=ma;
+	}
+	
+	
+	public int getMa() {
+		return ma;
+	}
+
+	public void setMa(int ma) {
+		this.ma = ma;
+	}
+
+	public String getTen() {
+		return ten;
+	}
+
+	public void setTen(String ten) {
+		this.ten = ten;
+	}
+
+	public double getDiem() {
+		return diem;
+	}
+
+	public void setDiem(double diem) {
+		this.diem = diem;
+	}
+
+	public double getGia() {
+		return gia;
+	}
+
+	public void setGia(double gia) {
+		this.gia = gia;
+	}
+
+	public OverloadingMethod(int ma,String ten) {
+		// ke thua lai tu thang mac dinh
+		this(ma);
+		this.ten=ten;
+	}
+	
+//	public OverloadingMethod(int ma,String ten,double diem) {
+//		// ke thua lai tu thang mac dinh
+//		this(ma,ten);
+//		this.diem=diem;
+//	}
+	
+	public void xetTotNghiep() {
+		if(this.diem>=5) {
+			System.out.println("duoc xet tot nghiep");
+		}else {
+			System.out.println("khong duoc xet tot nghiep");
+		}
+	}
+	
+	public void xetTotNghiep(double diem) {
+			System.out.println("ban co diem "+diem);
+	}
+	
+	public void xetTotNghiep(double diem, int vungXetTuyen) {
+		System.out.println("ban co diem "+diem+" vung uu tien "+vungXetTuyen);
+		}
+
+}

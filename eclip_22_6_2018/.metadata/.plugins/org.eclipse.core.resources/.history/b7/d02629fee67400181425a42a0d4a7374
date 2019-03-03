@@ -1,0 +1,10 @@
+package com.doituong.model;
+
+public class AbstractNV extends AbstractClass {
+
+	@Override
+	public void tinhLuong() {
+		System.out.println("nhan vien chinh thuc tinh luong");
+	}
+
+}

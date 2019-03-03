@@ -1,0 +1,10 @@
+package com.doituong.model;
+
+public class EnumJava {
+	private int ma;
+	private String ten;
+	private double diemTB;
+	private  XepLoai loai;
+	
+	
+}

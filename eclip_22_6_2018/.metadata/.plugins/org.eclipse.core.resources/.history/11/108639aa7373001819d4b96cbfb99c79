@@ -1,0 +1,10 @@
+package com.bai24;
+
+public class HamDoiChuoi {
+
+	public static void main(String[] args) {
+		String s =" xin chao ong obama";
+		String s1= s.replace("obama", "putin");
+		System.out.println(s1);
+	}
+}

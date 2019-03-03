@@ -1,0 +1,9 @@
+package com.bai24;
+
+public class DoiChuHoaThanhThuong {
+
+	public static void main(String[] args) {
+		String s="obama".toUpperCase();
+		System.out.println(s);
+	}
+}

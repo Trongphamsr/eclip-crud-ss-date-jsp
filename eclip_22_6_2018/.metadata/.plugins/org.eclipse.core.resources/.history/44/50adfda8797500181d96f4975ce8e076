@@ -1,0 +1,18 @@
+package com.bai80;
+
+import java.util.ArrayList;
+
+public class XuLyTapTinvsTextFile {
+
+	public boolean luuFile(ArrayList<String> dsData, String path) {
+		
+		boolean ok=false;
+		
+		try {
+			return ok;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return ok;
+	}
+}

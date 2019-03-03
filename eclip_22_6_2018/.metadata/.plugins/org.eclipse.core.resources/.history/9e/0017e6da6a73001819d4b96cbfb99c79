@@ -1,0 +1,10 @@
+package com.bai24;
+
+public class HamTimChuoi {
+	public static void main(String[] args) {
+		String s = "Hello everybody";
+		int i=0;
+//		indexOf tim chuoi dau tien tra ve, neu sai tra ve -1
+		i=s.indexOf("e");
+	}
+}

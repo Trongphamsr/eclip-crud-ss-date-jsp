@@ -1,0 +1,53 @@
+package model;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class MyConnectDB {
+	String sql;
+	
+
+//	public MyConnectDB() {
+//		super();
+//		this.sql = "jdbc:sqlserver://shopphone.database.windows.net:1433;database=sqlshop;user=admin0107@shopphone;password={ABCDabcd0107};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;";
+//	}
+	
+	
+	public Connection connect() throws Exception{
+		final String url="jdbc:mysql://localhost:3306/toeiconline";
+		final String user="root";
+		final String password="";
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			return DriverManager.getConnection(url, user, password);
+			} catch (ClassNotFoundException e) {
+				System.out.println("loi forname " + e.getMessage());
+			e.printStackTrace();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				System.out.println("loi DriverManager"+ e.getMessage());
+		}finally {
+			
+		}
+		return null;
+	}
+	
+	public void thucThiCauLenhSQL(String sql) throws Exception{
+		Connection connect =connect();
+		Statement stmt = connect.createStatement();
+		stmt.executeUpdate(sql);
+	}
+	public ResultSet chonDuLieuTuDTB(String sql) throws Exception{
+		Connection connect = connect();
+		Statement stmt = connect.createStatement();
+		ResultSet rs =stmt.executeQuery(sql);
+		return rs;
+	}
+	public static void main(String[] args) throws Exception {
+		MyConnectDB connect = new MyConnectDB();
+		System.out.println(connect.connect());
+	}
+}

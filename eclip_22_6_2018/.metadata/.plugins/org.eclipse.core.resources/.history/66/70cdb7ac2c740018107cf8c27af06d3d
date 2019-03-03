@@ -1,0 +1,92 @@
+package com.bai48;
+
+import java.util.Scanner;
+
+import communityutil.com.NhapBanPhamScanner;
+
+public class BaiTapMang {
+	static int []M;
+	public static void menu() {
+		System.out.println("1. nhap mang");
+		System.out.println("2. xuat mang");
+		System.out.println("3. tong mang");
+		System.out.println("4. tim kiem");
+		System.out.println("5. lon nhat");
+		System.out.println("6. nho nhat");
+		System.out.println("7. so nguyen to");
+		System.out.println("8. tang dan");
+		System.out.println("9. giam dan");
+		int chon=new Scanner(System.in).nextInt();
+		switch (chon) {
+		case 1:
+			nhapMang();
+			break;
+		case 2:
+			xuatMang();
+			break;
+		case 3:
+			tinhTong();
+			break;
+		case 4:
+			timKiem();
+			break;
+		case 5:
+			timMax();
+			break;
+		case 6:
+			timMin();
+			break;
+		case 7:
+			soNguyenTo();
+			break;
+		case 8:
+			sapTangDan();
+			break;
+		case 9:
+			sapGiamDan();
+			break;
+		default:
+			break;
+		}
+	}
+	private static void sapGiamDan() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void sapTangDan() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void soNguyenTo() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void timMin() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void timMax() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void timKiem() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void tinhTong() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void xuatMang() {
+		// TODO Auto-generated method stub
+		
+	}
+	private static void nhapMang() {
+		System.out.println("moi ban nhap mang");
+		Scanner sc = new Scanner(System.in);
+		
+	}
+	public static void main(String[] args) {
+		menu();
+	}
+}

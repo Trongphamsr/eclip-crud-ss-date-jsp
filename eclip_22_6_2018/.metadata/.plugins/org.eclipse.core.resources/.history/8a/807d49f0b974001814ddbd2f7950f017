@@ -1,0 +1,20 @@
+package com.doituong.model;
+
+public class OverloadingMethod {
+
+	// contructor la truong hop dac biet cua OverloadingMethod
+	// OverloadingMethod cung ten khac so luong, kieu, thu tu cac doi so
+	
+	private int ma;
+	private String ten;
+	private double gia;
+	public OverloadingMethod() {
+		
+	}
+	
+	public OverloadingMethod(int ma) {
+		this();
+		this.ma=ma;
+	}
+
+}

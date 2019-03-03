@@ -1,0 +1,20 @@
+package com.doituong.model;
+
+public class SinhVien {
+
+	private String hoTen;
+	private double diem;
+	
+	public SinhVien() {
+		System.out.println("day la contructor mac dinh");
+	}
+
+	public void setHoTen(String hoTen) {
+		this.hoTen=hoTen;
+	}
+	public String getHoTen() {
+		return this.hoTen;
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+package com.doituong.model;
+
+public class KeThuaExtends extends KeThua {
+	
+	@Override
+	public void tinhLuong() {
+		
+		super.tinhLuong();
+		System.out.println("day la nhan vien chinh thuc");
+	}
+}

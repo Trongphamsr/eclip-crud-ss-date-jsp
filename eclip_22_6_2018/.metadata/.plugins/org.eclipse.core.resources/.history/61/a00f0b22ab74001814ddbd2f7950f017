@@ -1,0 +1,8 @@
+package com.doituong.model;
+
+public class SinhVien {
+
+	public SinhVien() {
+		System.out.println("day la contructor mac dinh");
+	}
+}

@@ -1,0 +1,8 @@
+package javacore;
+
+public class XuatDuLieuManHinh {
+
+	public static void main(String[] args) {
+		// xuat thu vien thuoc java.lang
+	}
+}

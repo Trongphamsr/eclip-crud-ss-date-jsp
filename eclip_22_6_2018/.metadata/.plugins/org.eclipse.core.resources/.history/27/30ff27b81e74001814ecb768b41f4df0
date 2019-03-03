@@ -1,0 +1,9 @@
+package com.bai48;
+
+public class KhaiBaoMang {
+
+	public static void main(String[] args) {
+		int[] a= new int[5];
+		int b[]=new int[5];
+	}
+}

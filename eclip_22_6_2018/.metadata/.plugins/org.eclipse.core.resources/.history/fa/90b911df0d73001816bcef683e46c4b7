@@ -1,0 +1,10 @@
+package communityutil.com;
+
+public class ICauTrufElse {
+public static void main(String[] args) {
+	int x=8;
+	if(x>0) {
+		System.out.println("dau");
+	}
+}
+}

@@ -1,0 +1,48 @@
+package com.bai24;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class SuLySoNgauNhien {
+	
+	public static void choi() {
+		Random rd = new Random();
+		int soMay=rd.nextInt(101);
+		System.out.println("may da ra 1 so [0->100] moi thim doan");
+		int soNguoi;
+		int soLanDoan=0;
+		do {
+			System.out.println("ban doan so gi? ");
+			soNguoi = new Scanner(System.in).nextInt();
+			soLanDoan++;
+			System.out.println("thim doan lan thu "+soLanDoan);
+			if(soNguoi==soMay) {
+				System.out.println("thim doan dung= "+soMay);
+				break;
+			}
+			
+			if(soNguoi<soMay) {
+				System.out.println("thim doan sai so may > so thim");
+			}
+			else{
+				System.out.println("thim doan so may < so thim ");
+			}
+			
+			if(soLanDoan==7) {
+				System.out.println("thim da sai vi thim doan 7 lan roi");
+				break;
+			}
+		} while (soLanDoan<=7);
+	}
+	public static void main(String[] args) {
+		while (true) {
+			choi();
+			System.out.println("choi nua k thim(c/k)");
+			String tl = new Scanner(System.in).nextLine();
+			if(tl.equalsIgnoreCase("k")) {
+				break;
+			}
+		}
+		System.out.println("tam biet thim");
+	}
+}

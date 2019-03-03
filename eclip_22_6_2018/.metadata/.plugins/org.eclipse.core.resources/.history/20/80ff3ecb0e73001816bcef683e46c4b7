@@ -1,0 +1,25 @@
+package communityutil.com;
+
+public class ICauTrufElse {
+public static void main(String[] args) {
+	int x=8;
+//	 chi quan tam dieu kien dung
+	if(x>0) {
+		System.out.println("dau");
+	}
+//	quan tam dk dung sai
+	
+	int a=7;
+	if(a>9) {
+		System.out.println("dung");
+	}else {
+		System.out.println("sai");
+	}
+	int y=8;
+	if(y%2==0) {
+		System.out.println("ban dung");
+	}else {
+		System.out.println("ban sai");
+	}
+}
+}

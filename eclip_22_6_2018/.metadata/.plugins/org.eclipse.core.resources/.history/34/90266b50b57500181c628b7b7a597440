@@ -1,0 +1,8 @@
+package com.stringJavacore;
+
+public class contains {
+
+	public static void main(String[] args) {
+		
+	}
+}

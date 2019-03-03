@@ -1,0 +1,17 @@
+package com.doituong.model;
+
+import java.util.ArrayList;
+
+public class BaiTapQLSV2OOPStaff extends BaiTapQLNV2OOP{
+
+	private ArrayList<BaiTapQLNV2OOP> staffList;
+	public void addStaffMember(BaiTapQLNV2OOP sm) {
+		staffList.add(sm);
+	}
+	@Override
+	public double pay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

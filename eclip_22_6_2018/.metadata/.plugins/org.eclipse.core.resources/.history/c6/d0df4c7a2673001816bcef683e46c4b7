@@ -1,0 +1,25 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BreakContinute {
+
+	public static void main(String[] args) {
+		while (true) {
+			System.out.println("moi ban nhap vao 1 so");
+			int n = new Scanner(System.in).nextInt();
+			if(n%2==0) {
+				System.out.println(n + " la so chan");
+			}else {
+				System.out.println(n + " la so le");
+			}
+			System.out.println("tiep khong?(c/k):");
+			String line = new Scanner(System.in).nextLine();
+			if(line.equals("k")) {
+				break;
+			}
+			System.out.println("tam biet");
+		}
+		
+	}
+}

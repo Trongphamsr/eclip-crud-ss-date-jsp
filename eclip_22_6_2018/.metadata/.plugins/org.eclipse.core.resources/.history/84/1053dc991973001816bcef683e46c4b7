@@ -1,0 +1,17 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ban nhap so nguyen");
+		int a = sc.nextInt();
+		do {
+			
+			a++;
+			System.out.println(a);
+		} while (a<10);
+	}
+}

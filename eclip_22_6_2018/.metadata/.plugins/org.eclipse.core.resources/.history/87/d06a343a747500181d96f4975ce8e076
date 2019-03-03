@@ -1,0 +1,15 @@
+package com.doituong.model;
+
+import java.util.Date;
+
+import st.BaiTap3OOPPerson;
+
+public class BaiTapOOP3Womon  extends BaiTap3OOPPerson{
+
+	@Override
+	public void setDateOfBirth(Date dob) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

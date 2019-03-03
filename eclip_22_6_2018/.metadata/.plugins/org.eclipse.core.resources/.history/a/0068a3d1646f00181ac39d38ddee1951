@@ -1,0 +1,38 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+
+import com.connect.ConnectDb;
+import com.model.InsertModel;
+
+
+public class InsertDao {
+
+	public boolean addInsert(InsertModel i) {
+		boolean bl=false;
+		Connection con;
+		PreparedStatement ps=null;
+		
+		con=ConnectDb.openConnect();
+		try {
+			ps=con.prepareStatement("insert into login1 values(?,?,?)");
+			ps.setString(1, i.getUsername());
+			ps.setString(2, i.getPassword());
+//			Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+//			ps.setTimestamp(3, timestamp);
+			int a=ps.executeUpdate();
+			if(a>0) {
+				bl=true;
+			}else {
+				bl=false;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return bl;
+	}
+}

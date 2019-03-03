@@ -1,0 +1,9 @@
+package com.bai48;
+
+public class HanCheMang {
+
+	// kho xoa, kho mo rong...
+	public static void main(String[] args) {
+		
+	}
+}

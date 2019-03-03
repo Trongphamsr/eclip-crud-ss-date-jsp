@@ -1,0 +1,6 @@
+package com.doituong.model;
+
+public class AbstractClass {
+
+	// k ke thua, k new 
+}

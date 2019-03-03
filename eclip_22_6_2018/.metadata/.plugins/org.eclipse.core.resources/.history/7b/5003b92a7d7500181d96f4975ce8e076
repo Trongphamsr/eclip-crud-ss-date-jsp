@@ -1,0 +1,10 @@
+package com.bai80;
+
+import java.io.Serializable;
+
+public class serializeKhachHang implements Serializable {
+
+	private int ma;
+	private String ten;
+	
+}

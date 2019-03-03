@@ -1,0 +1,11 @@
+package com.doituong.model;
+
+public class BaiTaoQLSV2OOPVolun extends BaiTapQLNV2OOP{
+
+	@Override
+	public double pay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

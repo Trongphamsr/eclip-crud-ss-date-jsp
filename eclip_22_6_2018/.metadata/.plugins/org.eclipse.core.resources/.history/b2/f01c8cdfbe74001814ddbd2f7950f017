@@ -1,0 +1,31 @@
+package com.doituong.test;
+
+import com.doituong.model.OverloadingMethod;
+
+public class TestParameterOverloading {
+
+	public static int sum(int ... arr) {
+		int s=0;
+		for (int i = 0; i < arr.length; i++) {
+			s+=arr[i];
+			
+		}
+		return s;
+	}
+	public static void main(String[] args) {
+		int s=sum(1,4,7,2,9,5);
+		System.out.println(s);
+		int s1=sum();
+		System.out.println(s1);
+		int s2=sum(7,8);
+		System.out.println(s2);
+		OverloadingMethod sp1= new OverloadingMethod(1,"coca",25);
+		OverloadingMethod sp2= new OverloadingMethod(2,"pepsi",10);
+		OverloadingMethod sp3= new OverloadingMethod(3,"lavi",6);
+		double t=OverloadingMethod.tongTien(sp1,sp2,sp3);
+		System.out.println(t);
+	}
+	
+	
+	
+}

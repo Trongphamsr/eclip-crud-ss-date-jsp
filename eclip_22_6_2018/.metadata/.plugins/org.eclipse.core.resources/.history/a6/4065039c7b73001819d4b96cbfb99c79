@@ -1,0 +1,11 @@
+package com.bai24;
+
+public class TachChuoi {
+	public static void main(String[] args) {
+		String s="obama;putin;kim jong un";
+		String[] arr=s.split(";");
+		for(String name:arr) {
+			System.out.println(name);
+		}
+	}
+}

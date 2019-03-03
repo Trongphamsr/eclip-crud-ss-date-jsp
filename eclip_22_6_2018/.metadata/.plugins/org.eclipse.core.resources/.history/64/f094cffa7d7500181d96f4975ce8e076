@@ -1,0 +1,8 @@
+package com.bai80;
+
+public class SerializeTest {
+
+	public static void main(String[] args) {
+		ArrayList<serializeKhachHang>
+	}
+}

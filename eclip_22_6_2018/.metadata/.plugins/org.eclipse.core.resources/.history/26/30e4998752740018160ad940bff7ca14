@@ -1,0 +1,18 @@
+package com.bai48;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class ArrayListCollection {
+
+	public static void main(String[] args) {
+		ArrayList ds1 = new ArrayList<>();
+		ds1.add("1");
+		ds1.add(new Date("dd/MM/yyyy"));
+		ds1.add("5.5");
+		ArrayList<Integer> ds2 = new ArrayList<>();
+		ArrayList<Double> ds3 = new ArrayList<>();
+		ArrayList<String> ds4 = new ArrayList<>();
+		ArrayList<Boolean> ds5 = new ArrayList<>();
+	}
+}

@@ -1,0 +1,7 @@
+package com.doituong.model;
+
+public class KeThuaInterface {
+
+	// trong java ng ta chi cho don ke thua, chi ke thua tu 1 lop cha , k dk ke thua tu nhieu lop
+	// da thua ke, cac lop implement nhieu interface
+}

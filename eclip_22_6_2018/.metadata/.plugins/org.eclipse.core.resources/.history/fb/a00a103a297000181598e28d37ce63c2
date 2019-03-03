@@ -1,0 +1,18 @@
+package dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class NgonNguDao {
+
+	Map<String,String> englishLanguage(){
+		Map<String,String> map = new HashMap<>();
+		map.put("Login.TieuDe", "My Login Form");
+		map.put("Login.TenDangNhap", "username");
+		map.put("Login.MatKhau", "password");
+		map.put("Login.GhiNho", "remember");
+		map.put("Login.Submit", "SubMit");
+		return map;
+		
+	}
+}

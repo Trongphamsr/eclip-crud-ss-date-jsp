@@ -1,0 +1,18 @@
+package com.doituong.model;
+
+public class BaiTapQLSV2OOPEmployee extends BaiTapQLNV2OOP{
+
+	protected String socialSecurityNumber;
+	protected double payRate;
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString()+" - "+socialSecurityNumber+ " - " +payRate;
+	}
+	@Override
+	public double pay() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

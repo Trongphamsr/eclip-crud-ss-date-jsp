@@ -1,0 +1,16 @@
+package com.bai24;
+
+public class ThuVienChuoi {
+
+	
+	public static void main(String[] args) {
+		StringBuilder sb = new StringBuilder();
+		sb.append("Hello");
+		sb.append("\n");
+		sb.append("putin");
+		sb.append("\n");
+		sb.append("opama");
+		String s = sb.toString();
+		System.out.println(s);
+	}
+}

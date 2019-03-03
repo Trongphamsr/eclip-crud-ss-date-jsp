@@ -1,0 +1,17 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class NhapBanPhamScanner {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ban nhap du lieu tu ban phim");
+		int a= sc.nextInt();
+		
+		System.out.println("ban vua nhap "+a);
+		System.out.println("ban hay nhap so");
+		double db = sc.nextDouble();
+		System.out.println("ban vua nhap"+db);
+	}
+}

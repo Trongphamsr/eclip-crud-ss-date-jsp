@@ -1,0 +1,27 @@
+package com.bai80;
+
+import java.util.ArrayList;
+
+public class SerializeTest {
+
+	public static void main(String[] args) {
+//		ArrayList<serializeKhachHang> dsKH = new ArrayList<>();
+//	
+//		dsKH.add(new serializeKhachHang(1,"a"));
+//		dsKH.add(new serializeKhachHang(2,"b"));
+//		dsKH.add(new serializeKhachHang(3,"c"));
+//		boolean kq = SerializeFileFatory.luuFile(dsKH, "D:data_kh.dat");
+//		if(kq==true) {
+//			System.out.println("ok");
+//		}else {
+//			System.out.println("no ok");
+//		}
+		
+		
+		Object data = SerializeFileFatory.docFile("D:/data_kh.dat");
+		ArrayList<serializeKhachHang> dsKh = (ArrayList<serializeKhachHang>) data;
+		for(serializeKhachHang kh : dsKh) {
+			System.out.println(kh);
+		}
+	}
+}

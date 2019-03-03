@@ -1,0 +1,39 @@
+package com.doituong.test;
+
+import com.doituong.model.BaiTapQLSV2OOPEmployee;
+import com.doituong.model.BaiTapQLSV2OOPStaff;
+import com.doituong.model.BaiTapQLSV2OPPExcutive;
+
+public abstract class TestBaiTapQLSV2OOP {
+
+	public static void main(String[] args) {
+		BaiTapQLSV2OOPStaff st = new BaiTapQLSV2OOPStaff();
+		BaiTapQLSV2OOPEmployee teo=new BaiTapQLSV2OOPEmployee();
+		teo.setName("a");
+		teo.setAddress("hn");
+		teo.setPhone("01023");
+		teo.setPayRate(0.12);
+		teo.setSocialSecurityNumber("SEC123");
+		st.addStaffMember(teo);
+		
+		
+		BaiTapQLSV2OOPEmployee t=new BaiTapQLSV2OOPEmployee();
+		t.setName("a");
+		t.setAddress("hn");
+		t.setPhone("01023");
+		t.setPayRate(0.12);
+		t.setSocialSecurityNumber("SEC123");
+		st.addStaffMember(t);
+		
+		BaiTapQLSV2OPPExcutive an = new BaiTapQLSV2OPPExcutive();
+		an.setName("ma");
+		an.setAddress("shn");
+		an.setPhone("01024433");
+		an.setPayRate(0.12);
+		an.setSocialSecurityNumber("SEC93");
+		an.awardBonus(100);
+		
+		st.addStaffMember(an);
+		st.pay();
+	}
+}

@@ -1,0 +1,33 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BieuThucSwichCace {
+
+	public static void main(String[] args) {
+		System.out.println("moi ban nhap vao thang va nam muon tim kiem");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		switch (a) {
+		case 1:
+		case 3:
+		case 5:
+			Scanner sc1 = new Scanner(System.in);
+			int in = sc1.nextInt();
+			if(in%2==0) {
+				System.out.println("nam "+in+" la nam nhuan"+"thang"+a+"la thang co 31 ngay" );
+			}
+			break;
+			
+		case 2:
+		case 4:
+		case 6:
+			System.out.println("ban nhap thang co 28 ngay");
+			break;	
+
+		default:
+			System.out.println("ban nhap sai thang");
+			break;
+		}
+	}
+}

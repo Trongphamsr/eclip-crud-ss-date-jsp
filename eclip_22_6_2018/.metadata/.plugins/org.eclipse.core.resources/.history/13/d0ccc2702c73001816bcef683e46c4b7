@@ -1,0 +1,19 @@
+package communityutil.com;
+
+public class GiaiPTBac2 {
+
+	public static void ptb2(double a,double b,double c) {
+		if(a==0) {
+			System.out.println(" phuong trinh bac mot");
+			if(c==0 && b==0) {
+				System.out.println("pt vo so nghiem");
+			}
+			else if(b==0) {
+				System.out.println("pt vo nghiem");
+			}
+			else {
+				System.out.println("nghiem cua pt la" + -c/b);
+			}
+		}
+	}
+}

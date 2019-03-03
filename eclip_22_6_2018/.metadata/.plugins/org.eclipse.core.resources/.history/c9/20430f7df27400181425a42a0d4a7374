@@ -1,0 +1,12 @@
+package com.doituong.test;
+
+import com.doituong.model.DahinhHinhcn;
+
+public class TestDahinh {
+
+	public static void main(String[] args) {
+			
+		DahinhHinhcn j = new DahinhHinhcn();
+		j.tinhDienTich();
+	}
+}

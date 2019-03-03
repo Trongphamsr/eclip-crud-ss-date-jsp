@@ -1,0 +1,11 @@
+package communityutil.com;
+
+public class KieuDuLieu {
+
+	/**
+	 * co 8 kieu
+	 * boolean tra ve true false dung trong kiem tra dung sai
+	 * char luu ky tu trong nhay don
+	 * kieu so nguyen byte, short, int , long trong thuc te ng ta dung long int vi bo chua lua nhieu hon, tranh truong hop chan du lieu
+	 */
+}

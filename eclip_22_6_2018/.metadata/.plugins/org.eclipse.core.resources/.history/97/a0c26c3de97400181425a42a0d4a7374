@@ -1,0 +1,6 @@
+package com.doituong.model;
+
+public class KeThuaInterface {
+
+	// da thua ke dung interface
+}

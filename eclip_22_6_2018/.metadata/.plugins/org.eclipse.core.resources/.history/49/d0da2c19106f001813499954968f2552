@@ -1,0 +1,48 @@
+package pack;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class Reg
+ */
+@WebServlet("/Reg")
+public class Reg extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+  
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+	
+		try {
+			Connection con =ConnectUtil.getJdbcConnect();
+			String uname=request.getParameter("uname");
+			String pass=request.getParameter("pass");
+			String email=request.getParameter("email");
+			String add=request.getParameter("add");
+			
+			PreparedStatement ps=con.prepareStatement("insert into forgot123 values(?,?,?,?)");
+			ps.setString(1, uname);
+			ps.setString(2, add);
+			ps.setString(3, email);
+			ps.setString(4, pass);
+			int i=ps.executeUpdate();
+			if(i>0) {
+				response.sendRedirect("welcome.jsp");
+			}else {
+				response.sendRedirect("error.jsp");
+			}
+		} catch (Exception e) {
+			System.out.println("loi "+e.getMessage());
+		}
+	}
+
+}

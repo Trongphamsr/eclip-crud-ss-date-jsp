@@ -1,0 +1,17 @@
+package communityutil.com;
+
+public class CacCachGhiChu {
+
+//	
+/**/
+/**
+ * neu ban muon xet utf-8 ban vao project->properties->resources->other->utf-8
+ * 
+ * 	
+ */
+	
+	public static void pl(double a, dooble b) {
+		
+	}
+	
+}

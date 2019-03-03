@@ -1,0 +1,12 @@
+package com.doituong.test;
+
+import com.doituong.model.OrverridingNhanven;
+
+public class TestOverriding {
+
+	public static void main(String[] args) {
+		
+		OrverridingNhanven teo = new OrverridingNhanven();
+		teo.tinhLuong(20);
+	}
+}

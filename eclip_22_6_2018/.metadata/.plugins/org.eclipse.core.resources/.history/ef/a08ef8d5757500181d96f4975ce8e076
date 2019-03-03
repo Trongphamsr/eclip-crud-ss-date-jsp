@@ -1,0 +1,14 @@
+package com.doituong.model;
+
+public class BaiTapOOP3Main {
+
+	private boolean watchingFootball;
+
+	public boolean isWatchingFootball() {
+		return watchingFootball;
+	}
+
+	public void setWatchingFootball(boolean watchingFootball) {
+		this.watchingFootball = watchingFootball;
+	}
+}

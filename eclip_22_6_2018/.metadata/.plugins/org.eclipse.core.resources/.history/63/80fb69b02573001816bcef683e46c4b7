@@ -1,0 +1,17 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BreakContinute {
+
+	public static void main(String[] args) {
+		while (true) {
+			System.out.println("ban co muon tiep tuc khong?(c/k):");
+			Scanner sc = new Scanner(System.in);
+			if(sc.equals("k")) {
+				break;
+			}
+		}
+		
+	}
+}

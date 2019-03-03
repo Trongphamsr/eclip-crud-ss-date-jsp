@@ -1,0 +1,9 @@
+package com.doituong.model;
+
+public class BaiTapQLSV2OOPHourly {
+
+	public BaiTapQLSV2OOPHourly() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

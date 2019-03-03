@@ -1,0 +1,17 @@
+package com.doituong.model;
+
+public class SinhVienInterface implements KeThuaInterface{
+
+	@Override
+	public void complexity() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void diffculty() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

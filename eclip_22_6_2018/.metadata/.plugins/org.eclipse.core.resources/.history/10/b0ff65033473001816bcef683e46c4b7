@@ -1,0 +1,28 @@
+package communityutil.com;
+
+import java.util.Scanner;
+
+public class BaiTapFor {
+
+	public static double TinhS(int x,int n) {
+		double s=0;
+		double mau=0;
+		for(int i=1;i<=n;i++) {
+			double tu=Math.pow(x, i);
+			for(int j=1;j<=i;j++) {
+				mau=mau+j;
+			}
+			s=s+tu/mau;
+		}
+		return s;
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		System.out.println("ngap x");
+		int n = sc.nextInt();
+		System.out.println("nhap b");
+		TinhS(x, n);
+		
+	}
+}

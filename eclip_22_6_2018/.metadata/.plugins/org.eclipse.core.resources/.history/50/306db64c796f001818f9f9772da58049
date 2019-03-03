@@ -1,0 +1,33 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import com.connect.ConnectDb;
+import com.model.LoginModel;
+
+public class LoginDao {
+
+	public static boolean Login(LoginModel md) {
+		boolean bl = false;
+		Connection con;
+		PreparedStatement ps;
+		ResultSet rs;
+		
+		con=ConnectDb.openConnect();
+		try {
+			String sql="select * from login where username=? and password=?";
+			ps=con.prepareStatement(sql);
+			ps.setString(1, md.getUsername());
+			ps.setString(2, md.getPassword());
+			rs=ps.executeQuery();
+			bl=(rs.next());
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return bl;
+	}
+}

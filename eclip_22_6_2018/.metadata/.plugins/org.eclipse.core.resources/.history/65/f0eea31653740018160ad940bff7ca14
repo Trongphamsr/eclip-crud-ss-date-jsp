@@ -1,0 +1,33 @@
+package com.bai48;
+
+import java.util.ArrayList;
+import java.util.Date;
+
+public class ArrayListCollection {
+
+	public static void main(String[] args) {
+		ArrayList ds1 = new ArrayList<>();
+		ds1.add("1");
+		ds1.add(new Date("12/09/1990"));
+		ds1.add("5.5");
+		ArrayList<Integer> ds2 = new ArrayList<>();
+		ArrayList<Double> ds3 = new ArrayList<>();
+		ArrayList<Boolean> ds4 = new ArrayList<>();
+		ArrayList<String> ds5 = new ArrayList<>();
+		
+		ds5.add("anh hop");
+		ds5.add("anh nam");
+		ds5.add("anh huyen");
+		ds5.add("pu tin");
+		ds5.add("obama");
+		
+		
+		for (int i = 0; i < ds5.size(); i++) {
+			System.out.println(ds5.get(i));
+		}
+		ds5.add(2, "bao nam");
+		for (int i = 0; i < ds5.size(); i++) {
+			System.out.println(ds5.get(i));
+		}
+	}
+}

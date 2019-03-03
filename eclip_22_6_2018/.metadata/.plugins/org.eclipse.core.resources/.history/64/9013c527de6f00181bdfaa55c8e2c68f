@@ -1,0 +1,81 @@
+package com.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Timestamp;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.concurrent.TimeUnit;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.eclipse.jdt.internal.compiler.batch.Main;
+
+import com.connect.ConnectDb;
+import com.model.LoginModel;
+
+public class LoginDao {
+
+	public static LoginModel Login(String username, String password) {
+		boolean bl = false;
+		Connection con;
+		PreparedStatement ps;
+		ResultSet rs;
+		con=ConnectDb.openConnect();
+		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		String sql1 = "select createdate from login where username='"+username+"'";
+		try {
+			ps=con.prepareCall(sql1);
+			rs=ps.executeQuery();
+			Date d1=(Date) rs;
+			//String dateStart = "11/03/14 09:29:58";
+			long l = System.currentTimeMillis();
+			String dateStop= String.valueOf(l);
+			SimpleDateFormat format = new SimpleDateFormat("yy/MM/dd HH:mm:ss");
+			//Date d1 = null;
+			Date d2 = null;
+			
+			try {
+				//d1= format.parse(rs);
+				d2=  format.parse(dateStop);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			long diff=d2.getTime()-d1.getTime();
+			long seconds = TimeUnit.MILLISECONDS.toSeconds(diff);
+			//long minutes = TimeUnit.MILLISECONDS.toMinutes(diff);
+			if(seconds<=2592000) {
+				String sql="select * from login where username='"+username+"' and password='"+password+"'";
+				try {
+					ps=con.prepareCall(sql);
+					rs=ps.executeQuery();
+					
+					while(rs.next()) {
+						LoginModel md= new LoginModel();
+						md.setUsername(rs.getString("username"));
+						md.setPassword(rs.getString("password"));
+						con.close();
+						return md;
+					}
+				} catch (SQLException e) {
+					Logger.getLogger(LoginDao.class.getName()).log(Level.SEVERE,null,e);
+				}
+//				return null;
+			}
+//			System.out.println(diff+"------");
+//			System.out.println(seconds+"----");
+//			System.out.println(seconds);
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		return null;
+	}
+	
+	public static void main(String[] args) throws SQLException {
+		
+	}
+}

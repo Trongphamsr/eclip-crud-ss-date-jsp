@@ -1,0 +1,18 @@
+package com.bai48;
+
+public class BaiTapArrayList {
+
+	public static void menu() {
+		System.out.println("1.them");
+		System.out.println("2.xuat");
+		System.out.println("3.sua");
+		System.out.println("4.xoa");
+		System.out.println("5.tim kiem");
+		System.out.println("6.sap xep");
+		System.out.println("7.thoat");
+		System.out.println("thim chon j");
+	}
+	public static void main(String[] args) {
+		
+	}
+}

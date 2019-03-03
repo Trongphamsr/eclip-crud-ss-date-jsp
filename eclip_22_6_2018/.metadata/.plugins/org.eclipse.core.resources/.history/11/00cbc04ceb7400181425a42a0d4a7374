@@ -1,0 +1,8 @@
+package com.doituong.test;
+
+public class TestInterface {
+
+	public static void main(String[] args) {
+		
+	}
+}
